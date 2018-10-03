@@ -2,7 +2,7 @@
   "builders": [
     {
       "type": "googlecompute",
-      "project_id": "akamat-image",
+      "project_id": "keller-williams-215619",
       "source_image": "rhel-7-v20180911",
       "ssh_username": "hcm-akamat",
       "zone": "us-east1-b",
