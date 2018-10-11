@@ -12,6 +12,15 @@
   "provisioners": [{
     "type": "shell",
     "inline": [
+      "sudo yum install gcc python-devel python-setuptools redhat-rpm-config -y",
+      "sudo easy_install -U pip",
+      "sudo pip uninstall crcmod",
+      "sudo pip install -U crcmod",
+      "sudo yum install java-1.8.0-openjdk-devel -y",
+      "export JAVA_HOME=/usr/lib/jvm/java-openjdk",
+      "export PATH=$PATH:$JAVA_HOME/bin",
+      "sudo yum install tomcat -y",
+      "sudo yum install unzip -y",
       "sudo mkdir -p /opt/forgerock",
       "sudo gsutil cp gs://kwfr-bits/* /opt/forgerock/",
       "cd /opt/forgerock",
