@@ -9,10 +9,6 @@ before_script:
 - gsutil cp gs://kwfr-bits/* .
 - unzip packer_1.3.1_linux_amd_64.zip
 - sudo mv packer /usr/local/bin
-- mkdir -p /opt/forgerock
-- unzip IDM-6.0.0.2.zip
-- sudo mv openidm /opt/forgerock
-
 
 before_install:
 - openssl aes-256-cbc -K $encrypted_7df099107e0f_key -iv $encrypted_7df099107e0f_iv

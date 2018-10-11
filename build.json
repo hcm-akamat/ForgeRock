@@ -6,13 +6,17 @@
       "source_image": "rhel-7-v20180911",
       "ssh_username": "hcm-akamat",
       "zone": "us-east1-b",
-      "account_file": "account_file.json"
+      "account_file": "account_file.json",
+      "image_name":  "kwri-idm"
     }
   ],
   "provisioners": [{
     "type": "shell",
     "inline": [
-      "sleep 30"
+      "mkdir -p /opt/forgerock",
+      "gsutil cp gs://kwfr-bits/* /opt/forgerock/",
+      "cd /opt/forgerock",
+      "unzip IDM-6.0.0.2.zip"
     ]
   }]
 }
