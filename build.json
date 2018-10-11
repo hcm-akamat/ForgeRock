@@ -22,9 +22,8 @@
       "sudo yum install tomcat -y",
       "sudo yum install unzip -y",
       "sudo mkdir -p /opt/forgerock",
-      "sudo gsutil cp gs://kwfr-bits/* /opt/forgerock/",
-      "cd /opt/forgerock",
-      "unzip ./IDM-6.0.0.2.zip"
+      "sudo gsutil cp gs://kwfr-bits/* .",
+      "unzip IDM-6.0.0.2.zip"
     ]
   }]
 }
