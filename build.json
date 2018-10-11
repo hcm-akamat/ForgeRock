@@ -24,7 +24,7 @@
       "sudo mkdir -p /opt/forgerock",
       "sudo gsutil cp gs://kwfr-bits/* /opt/forgerock/",
       "cd /opt/forgerock",
-      "unzip ./IDM-6.0.0.2.zip ."
+      "unzip ./IDM-6.0.0.2.zip"
     ]
   }]
 }
