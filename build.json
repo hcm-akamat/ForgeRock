@@ -12,8 +12,6 @@
   "provisioners": [{
     "type": "shell",
     "inline": [
-      "sleep 30",
-      "sudo yum install tomcat -y"
     ]
   }]
 }
