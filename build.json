@@ -6,8 +6,7 @@
       "source_image": "rhel-7-v20180911",
       "ssh_username": "hcm-akamat",
       "zone": "us-east1-b",
-      "account_file": "account_file.json",
-      "image_name":  "kwri-idm"
+      "account_file": "account_file.json"
     }
   ],
   "provisioners": [{
