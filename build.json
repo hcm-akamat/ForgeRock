@@ -13,7 +13,7 @@
     "type": "shell",
     "inline": [
       "sudo mkdir -p /opt/forgerock",
-      "gsutil cp gs://kwfr-bits/* /opt/forgerock/",
+      "sudo gsutil cp gs://kwfr-bits/* /opt/forgerock/",
       "cd /opt/forgerock",
       "unzip IDM-6.0.0.2.zip"
     ]
