@@ -12,8 +12,7 @@
   "provisioners": [{
     "type": "shell",
     "inline": [
-      "sudo su -",
-      "mkdir -p /opt/forgerock",
+      "sudo mkdir -p /opt/forgerock",
       "gsutil cp gs://kwfr-bits/* /opt/forgerock/",
       "cd /opt/forgerock",
       "unzip IDM-6.0.0.2.zip"
